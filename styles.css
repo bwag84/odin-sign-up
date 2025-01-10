@@ -1,0 +1,159 @@
+/* CSS Reset based on the Meyerweb Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    border: 40px solid #000;
+    background-color: #fff;
+}
+
+.left-section {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('/img/form.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-section {
+    width: 66.67%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .form-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-left, form .form-right {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form button {
+    flex: none; /* Ensure the button does not grow or shrink */
+    align-self: flex-start;
+    width: 256px;
+    height: 40px; /* Set a more reasonable height */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+    margin-top: 0; /* Ensure the button stays at the top */
+}
+
+form button:hover {
+    background-color: lightgreen;
+}
+
+form .signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+form .signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+form .signup-text a:hover {
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+}

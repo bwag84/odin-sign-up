@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin sign up form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="/img/odin-lined.png" alt="Logo" style="width: 100px; height: 100px;">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="right-section">
+            <div class="description">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. You know you want to.</p>
+            </div>
+            <form>
+                <div class="form-fields">
+                    <div class="form-left">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                        
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-right">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                        
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" placeholder="Phone Number" required>
+                        
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="signup-text">
+                    Don't have an account yet? <a href="#">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
